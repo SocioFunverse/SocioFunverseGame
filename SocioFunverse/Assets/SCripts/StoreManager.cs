@@ -73,7 +73,7 @@ public class StoreManager : MonoBehaviour
             for (int j = 0; j < CovalentManager.insta.myTokenID.Count; j++)
             {
 
-                Debug.Log("Parse Value : " + Int32.Parse(CovalentManager.insta.myTokenID[j]));
+                Debug.Log("Parse Value : " + Int32.Parse(CovalentManager.insta.myTokenID[j]) + " | " + CovalentManager.insta.myTokenID[j]);
                 if (Int32.Parse(CovalentManager.insta.myTokenID[j]) == DatabaseManager.allMetaDataServer[i].itemid)
                 {
                     check = true;

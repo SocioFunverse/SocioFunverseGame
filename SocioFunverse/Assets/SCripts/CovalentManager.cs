@@ -36,7 +36,7 @@ public class CovalentManager : MonoBehaviour
     public void GetNFTUserBalance()
     {
         //if(!loadingData) StartCoroutine(GetNFTBalance());
-        if(!loadingData) GetNFTBalance();
+        if(!loadingData) EvmosManager.Instance.GetNFTList();
         else Debug.Log("Already loading GetNFTBalance");
     }
     async public void GetNFTBalance()

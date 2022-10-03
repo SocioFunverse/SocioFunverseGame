@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 165891325}
-  m_IndirectSpecularColor: {r: 0.08030865, g: 0.09971575, b: 0.3011349, a: 1}
+  m_IndirectSpecularColor: {r: 0.09946294, g: 0.12509647, b: 0.31836015, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -775,7 +775,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Buy
 
-        0.100'
+        1.00'
       objectReference: {fileID: 0}
     - target: {fileID: 667568386, guid: aedd28b0a5b7e8a4a9deabf1dcceb73f, type: 3}
       propertyPath: m_fontSize
@@ -6853,7 +6853,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Buy
 
-        0.025'
+        0.25'
       objectReference: {fileID: 0}
     - target: {fileID: 667568386, guid: aedd28b0a5b7e8a4a9deabf1dcceb73f, type: 3}
       propertyPath: m_fontSize
@@ -24335,7 +24335,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Buy
 
-        0.050'
+        0.50'
       objectReference: {fileID: 0}
     - target: {fileID: 667568386, guid: aedd28b0a5b7e8a4a9deabf1dcceb73f, type: 3}
       propertyPath: m_fontSize
@@ -26280,7 +26280,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Buy
 
-        0.075'
+        0.75'
       objectReference: {fileID: 0}
     - target: {fileID: 667568386, guid: aedd28b0a5b7e8a4a9deabf1dcceb73f, type: 3}
       propertyPath: m_fontSize

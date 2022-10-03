@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using Cysharp.Threading.Tasks;
 public class DatabaseManager : MonoBehaviour
 {
     #region Singleton
@@ -197,27 +197,35 @@ public class DatabaseManager : MonoBehaviour
             }
         }
     }
-    public void GetAllNFTImg()
+    public async UniTaskVoid GetAllNFTImg()
     {
         for (int i = 0; i < allMetaDataServer.Count; i++)
         {
-            StartCoroutine(GetTexture(allMetaDataServer[i].imageurl, i));
+            //StartCoroutine(GetTexture(allMetaDataServer[i].imageurl, i));
+            await UniTask.Delay(UnityEngine.Random.Range(600, 1000));
+            GetTexture(allMetaDataServer[i].imageurl, i);
         }
 
     }
-    IEnumerator GetTexture(string _url, int _index)
+    async UniTaskVoid GetTexture(string _url, int _index)
     {
+        HERE:
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(_url);
-        yield return www.SendWebRequest();
+        www.timeout = 20;
+        await www.SendWebRequest();
 
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
+            await UniTask.Delay(UnityEngine.Random.Range(3000,6000));
+            Debug.Log("Retry " + _url);
+            goto HERE;
         }
         else
         {
             allMetaDataServer[_index].imageTexture = (((DownloadHandlerTexture)www.downloadHandler).texture);
         }
+       // return true;
     }
 
     public Texture GetNFTTexture(int tokenId)

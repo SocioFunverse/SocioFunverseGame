@@ -24,6 +24,7 @@ public class MetaManager : MonoBehaviour
     public static bool isFighting = false;
     public static bool isAtttacking = false;
     public static bool isShooting = false;
+    public static bool isMission = false;
     public static Photon.Realtime.Player fightReqPlayer;
 
     public static string _fighterid;

@@ -313,7 +313,7 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
     bool _waitToReattack = false;
     private void OnTriggerEnter(Collider other)
     {
-        if (!MetaManager.isFighting && !MetaManager.isShooting)
+        if (!MetaManager.isFighting && !MetaManager.isShooting && !MetaManager.isMission)
         {
             if (!pview.IsMine && (bool)pview.Owner.CustomProperties["isfighting"] == false && !MetaManager.inVirtualWorld)
             {
@@ -338,6 +338,19 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
                 LeanTween.scale(shootingAreaBtn.gameObject, Vector2.one * 1.6f, 1f).setEasePunch().setFrom(Vector2.one);
             }
             else if (other.CompareTag("throwcan"))
+            {
+                AudioManager.insta.playSound(15);
+
+                shootingAreaBtn.onClick.RemoveAllListeners();
+                shootBulletBtn.onClick.RemoveAllListeners();
+                shootingAreaBtn.onClick.AddListener(GoToThrowCan);
+                shootBulletBtn.onClick.AddListener(ThrowRock);
+
+                shootingAreaBtn.gameObject.SetActive(true);
+
+                LeanTween.scale(shootingAreaBtn.gameObject, Vector2.one * 1.6f, 1f).setEasePunch().setFrom(Vector2.one);
+            }
+            else if (other.CompareTag("missiona"))
             {
                 AudioManager.insta.playSound(15);
 
@@ -413,6 +426,10 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
             shootingAreaBtn.gameObject.SetActive(false);
         }
         else if (other.CompareTag("throwcan"))
+        {
+            shootingAreaBtn.gameObject.SetActive(false);
+        }
+        else if (other.CompareTag("missiona"))
         {
             shootingAreaBtn.gameObject.SetActive(false);
         }

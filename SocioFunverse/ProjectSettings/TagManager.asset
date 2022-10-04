@@ -13,6 +13,9 @@ TagManager:
   - shootingArea
   - minigame
   - throwcan
+  - missiona
+  - missionb
+  - missionc
   layers:
   - Default
   - TransparentFX

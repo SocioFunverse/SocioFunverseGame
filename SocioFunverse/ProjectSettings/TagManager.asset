@@ -16,6 +16,7 @@ TagManager:
   - missiona
   - missionb
   - missionc
+  - ball
   layers:
   - Default
   - TransparentFX

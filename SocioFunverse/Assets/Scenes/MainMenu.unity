@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 165891325}
-  m_IndirectSpecularColor: {r: 0.29103634, g: 0.24704537, b: 0.31654206, a: 1}
+  m_IndirectSpecularColor: {r: 0.5614534, g: 0.51864105, b: 0.58051616, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3630,7 +3630,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Please login with Meta Mask Wallet to play this game
 
-    (Evmos testnet
+    (Coinex testnet
     will be used authenticate)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -18814,6 +18814,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2049117074245742192, guid: 019d13e1232f0ca4fb13792c9c9de0b2, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049117074245742192, guid: 019d13e1232f0ca4fb13792c9c9de0b2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 84b04a4b43383a6459b1fe9efda490ad, type: 3}
     - target: {fileID: 2049117074854081657, guid: 019d13e1232f0ca4fb13792c9c9de0b2, type: 3}
       propertyPath: m_RootOrder
       value: 8

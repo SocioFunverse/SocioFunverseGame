@@ -77,6 +77,8 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
 
     LocalData localData;
 
+    public static MissionManager missionMan;
+
 
     private void Awake()
     {
@@ -324,9 +326,10 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
                     virtualWorldUI.SetActive(true);
                 }
             }
-            else if (other.CompareTag("shootingArea")) {
+            else if (other.CompareTag("shootingArea"))
+            {
                 AudioManager.insta.playSound(15);
-                
+
 
                 shootingAreaBtn.onClick.RemoveAllListeners();
                 shootBulletBtn.onClick.RemoveAllListeners();
@@ -355,15 +358,32 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
                 AudioManager.insta.playSound(15);
 
                 shootingAreaBtn.onClick.RemoveAllListeners();
-                shootBulletBtn.onClick.RemoveAllListeners();
-                shootingAreaBtn.onClick.AddListener(GoToThrowCan);
-                shootBulletBtn.onClick.AddListener(ThrowRock);
+                shootingAreaBtn.onClick.AddListener(()=> GoToMission(0));
+               
+                shootingAreaBtn.gameObject.SetActive(true);
+
+                LeanTween.scale(shootingAreaBtn.gameObject, Vector2.one * 1.6f, 1f).setEasePunch().setFrom(Vector2.one);
+            }
+            else if (other.CompareTag("missionb"))
+            {
+                AudioManager.insta.playSound(15);
+
+                shootingAreaBtn.onClick.RemoveAllListeners();
+                shootingAreaBtn.onClick.AddListener(() => GoToMission(1));
 
                 shootingAreaBtn.gameObject.SetActive(true);
 
                 LeanTween.scale(shootingAreaBtn.gameObject, Vector2.one * 1.6f, 1f).setEasePunch().setFrom(Vector2.one);
             }
 
+        }
+        else if (MetaManager.isMission) {
+            if (other.CompareTag("ball"))
+            {
+                missionMan.Counter++;
+                AudioManager.insta.playSound(15);
+                other.gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -429,7 +449,7 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             shootingAreaBtn.gameObject.SetActive(false);
         }
-        else if (other.CompareTag("missiona"))
+        else if (other.CompareTag("missiona") || other.CompareTag("missionb"))
         {
             shootingAreaBtn.gameObject.SetActive(false);
         }
@@ -674,7 +694,17 @@ public class MyCharacter : MonoBehaviourPunCallbacks, IOnEventCallback
         }
     }
 
-    
+    private void GoToMission(int _no)
+    {
+
+        if (!MetaManager.isMission)
+        {
+            MetaManager.isMission = true;
+            shootingAreaBtn.gameObject.SetActive(false);
+            MetaManager.insta.missionObj[_no].SetActive(true);
+        }
+    }
+
     private void GoToShootMode()
     {
        

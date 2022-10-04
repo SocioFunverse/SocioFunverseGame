@@ -40,6 +40,8 @@ public class MetaManager : MonoBehaviour
     public TMPro.TMP_Text Text_ShootCounter;
     public GameObject crossHair;
 
+    public GameObject[] missionObj;
+
 
     private void Awake()
     {

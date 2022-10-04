@@ -63,6 +63,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject VirtualWorldObj;
 
+    public TMP_Text timerText;
+
     private void Awake()
     {
         insta = this;
@@ -410,7 +412,7 @@ public class UIManager : MonoBehaviour
 
                     if (won)
                     {
-                        txt_gamestatus.text = "Won!";
+                        txt_gamestatus.text = "Winner!";
                         txt_scoreChange.text = "Coins Change: +1";
                     }
                     else
@@ -426,13 +428,29 @@ public class UIManager : MonoBehaviour
 
                     if (won)
                     {
-                        txt_gamestatus.text = "Won!";
+                        txt_gamestatus.text = "Winner!";
                         txt_scoreChange.text = "Coins Change: +1";
                     }
                     else
                     {
                         txt_gamestatus.text = "Lose!";
                         txt_scoreChange.text = "Coins Change: 0";
+                    }
+                    break;
+                }
+            case 2:
+                {
+                    txt_gamename.text = "Mission";
+
+                    if (won)
+                    {
+                        txt_gamestatus.text = "Mission Complete!";
+                        txt_scoreChange.text = "";
+                    }
+                    else
+                    {
+                        txt_gamestatus.text = "Mission Failed!";
+                        txt_scoreChange.text = "";
                     }
                     break;
                 }

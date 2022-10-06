@@ -5052,7 +5052,7 @@ GameObject:
   - component: {fileID: 1019110893}
   - component: {fileID: 1019110895}
   m_Layer: 0
-  m_Name: BCManagaer
+  m_Name: CoinExManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

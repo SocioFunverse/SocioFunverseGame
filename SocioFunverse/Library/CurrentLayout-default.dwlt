@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1904
     height: 981
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 981
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -165,10 +165,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 780, y: 342}
-  m_MaxSize: {x: 16005, y: 8042}
+  m_MinSize: {x: 780, y: 492}
+  m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 14157
+  controlID: 7225
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,10 +190,10 @@ MonoBehaviour:
     y: 0
     width: 1379
     height: 931
-  m_MinSize: {x: 505, y: 342}
-  m_MaxSize: {x: 12005, y: 8042}
+  m_MinSize: {x: 505, y: 492}
+  m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 14158
+  controlID: 7226
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 14159
+  controlID: 7227
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -318,15 +318,15 @@ MonoBehaviour:
     y: 613
     width: 1379
     height: 318
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28b6faff4cb6faff3ac4faff5cc4faffe82bfbff0a2cfbfffc39fbff0e3afbfff03afbffb046fbffe87dfbff7a6ffcffc06ffcffc684fcffce84fcffd284fcffee84fcff1a85fcff2285fcff2c85fcff2289fcff2494fcff3814ffffc422ffffe62cffff8846ffff165cffff2a71ffff4e72ffffde8bffff188cffff26a4ffff32dfffffd0eeffff06faffff4cfaffff36fbffff2e8c00009a330100ee600100
+      m_ExpandedIDs: 5cc8ffff7ec8ffffcccbffff0accffff46d9ffff36fbffff904b00009c4d000022560000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -491,7 +491,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 12}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -35.471817, y: -8.928358, z: 4.4369264}
     speed: 2
-    m_Value: {x: 20.28, y: 5.249564, z: -35.996513}
+    m_Value: {x: -35.471817, y: -8.928358, z: 4.4369264}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -586,11 +586,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.40409586, y: 0.40110445, z: -0.20349568, w: -0.79650235}
     speed: 2
-    m_Value: {x: 0, y: 1, z: 0, w: 0}
+    m_Value: {x: -0.4040949, y: 0.4011035, z: -0.20349519, w: -0.79650044}
   m_Size:
     m_Target: 9.852604
     speed: 2
-    m_Value: 1.2642338
+    m_Value: 9.852604
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -678,22 +678,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/WebGLTemplates/Better2020
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets
+  - Assets/WebGLTemplates/Better2020
   m_LastFoldersGridSize: 72
   m_LastProjectPath: X:\Projects\Jigar\TGS\SocioFunverseGame\SocioFunverse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: e8580000
-    m_LastClickedID: 22760
-    m_ExpandedIDs: 00000000e8580000ea580000125900003a590000101c0400141c0400181c04001a1c0400
+    scrollPos: {x: 0, y: 523}
+    m_SelectedIDs: eec30000
+    m_LastClickedID: 50158
+    m_ExpandedIDs: 00000000cc590000ce590000d0590000d2590000d4590000d6590000d8590000da590000325a0000385a0000425a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -721,7 +721,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8580000ea580000ec580000ee580000
+    m_ExpandedIDs: 00000000cc590000ce590000d0590000d2590000d4590000d6590000d8590000da590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,8 +746,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a0b10400
-    m_LastClickedInstanceID: 307616
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c0010000244900003c6e0000a857000080410000f24a0000e84a0000564b000028580000dc740000a23d0000ce410000064900006247000014450000ee3d00007a3e0000e2450000705300002866000000650000be3e000014400000c84200006c4100001c470000e4470000864800005c46000004400000724300005c410000ea410000cc470000164a0000184a0000ec690100aa3e000032560000da510000066b00001e5400001a540000e8590000b00f050010d8050030d805007e000c00a40a0a00e26000001e29010014610000727d00003a7300003c730000d6730000a87903007c740000269c00001e9c0000144700009c3f0000043e0000fc4d000010770000c85900009869000000000000
     m_RenameOverlay:
@@ -859,7 +859,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1783
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

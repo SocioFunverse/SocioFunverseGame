@@ -26240,8 +26240,8 @@ MonoBehaviour:
   handAttackCollider: {fileID: 3842550903165120041}
   weaponObj: {fileID: 7338639894430088281}
   weaponParent:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 513482393337629223}
+  - {fileID: 7147849632193500662}
   weapons:
   - {fileID: 6251816239954318839}
   - {fileID: 3832393013314347294}

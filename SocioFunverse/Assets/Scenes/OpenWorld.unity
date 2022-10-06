@@ -16,11 +16,11 @@ RenderSettings:
   serializedVersion: 9
   m_Fog: 1
   m_FogColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.01
-  m_LinearFogStart: 15
-  m_LinearFogEnd: 100
-  m_AmbientSkyColor: {r: 0.3019608, g: 0.3019608, b: 0.3019608, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.02
+  m_LinearFogStart: 7
+  m_LinearFogEnd: 150
+  m_AmbientSkyColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.5
@@ -1054,7 +1054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4846495648865727765, guid: 0de1ed2448a31204c8954348df2ec40b, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4846495648865727765, guid: 0de1ed2448a31204c8954348df2ec40b, type: 3}
       propertyPath: m_CookieSize
@@ -1062,6 +1062,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4846495648865727765, guid: 0de1ed2448a31204c8954348df2ec40b, type: 3}
       propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846495648865727770, guid: 0de1ed2448a31204c8954348df2ec40b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2817,7 +2821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &165891325
 Light:
   m_ObjectHideFlags: 0
@@ -2830,7 +2834,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.75
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4660,7 +4664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn_delay: 3
   spawn_time: 3
-  spawn_balloon_location: {x: 0, y: 0, z: 0}
+  spawn_balloon_location: {x: 1, y: 0, z: 0}
   balloon_prefab: {fileID: 1399465948743628289, guid: 23fb646064b7b604e929fcb2ee073025, type: 3}
 --- !u!1 &298828544
 GameObject:
@@ -44081,11 +44085,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3977524066712549877, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.38
+      value: -6.89
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066712549877, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.99
+      value: -7.44
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987568, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_RootOrder
@@ -44093,7 +44097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987568, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.24
+      value: -13.56
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987568, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44101,7 +44105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987568, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.33
+      value: 4.17
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987568, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44141,7 +44145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987571, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_Radius
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3977524066744987571, guid: c8aae818b32c53d44925ff1a7413ebf5, type: 3}
       propertyPath: m_Center.x

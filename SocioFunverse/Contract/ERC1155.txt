@@ -1,444 +1,62 @@
-0x03e8be95D606356956d687e5239c7709D90DA32c
+0xca39deE8Bc83d428aA8C87a26D93798ed92BE243
 
-ABI :
-[
- {
-  "inputs": [],
-  "stateMutability": "nonpayable",
-  "type": "constructor"
- },
- {
-  "anonymous": false,
-  "inputs": [
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "account",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "operator",
-    "type": "address"
-   },
-   {
-    "indexed": false,
-    "internalType": "bool",
-    "name": "approved",
-    "type": "bool"
-   }
-  ],
-  "name": "ApprovalForAll",
-  "type": "event"
- },
- {
-  "inputs": [
-   {
-    "internalType": "uint256",
-    "name": "_itemId",
-    "type": "uint256"
-   }
-  ],
-  "name": "buyCoins",
-  "outputs": [],
-  "stateMutability": "payable",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "uint256",
-    "name": "_tokenId",
-    "type": "uint256"
-   },
-   {
-    "internalType": "string",
-    "name": "_tokenUrl",
-    "type": "string"
-   }
-  ],
-  "name": "buyNonBurnItem",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "anonymous": false,
-  "inputs": [
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "previousOwner",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "newOwner",
-    "type": "address"
-   }
-  ],
-  "name": "OwnershipTransferred",
-  "type": "event"
- },
- {
-  "inputs": [],
-  "name": "renounceOwnership",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "from",
-    "type": "address"
-   },
-   {
-    "internalType": "address",
-    "name": "to",
-    "type": "address"
-   },
-   {
-    "internalType": "uint256[]",
-    "name": "ids",
-    "type": "uint256[]"
-   },
-   {
-    "internalType": "uint256[]",
-    "name": "amounts",
-    "type": "uint256[]"
-   },
-   {
-    "internalType": "bytes",
-    "name": "data",
-    "type": "bytes"
-   }
-  ],
-  "name": "safeBatchTransferFrom",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "from",
-    "type": "address"
-   },
-   {
-    "internalType": "address",
-    "name": "to",
-    "type": "address"
-   },
-   {
-    "internalType": "uint256",
-    "name": "id",
-    "type": "uint256"
-   },
-   {
-    "internalType": "uint256",
-    "name": "amount",
-    "type": "uint256"
-   },
-   {
-    "internalType": "bytes",
-    "name": "data",
-    "type": "bytes"
-   }
-  ],
-  "name": "safeTransferFrom",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "operator",
-    "type": "address"
-   },
-   {
-    "internalType": "bool",
-    "name": "approved",
-    "type": "bool"
-   }
-  ],
-  "name": "setApprovalForAll",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "anonymous": false,
-  "inputs": [
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "operator",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "from",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "to",
-    "type": "address"
-   },
-   {
-    "indexed": false,
-    "internalType": "uint256[]",
-    "name": "ids",
-    "type": "uint256[]"
-   },
-   {
-    "indexed": false,
-    "internalType": "uint256[]",
-    "name": "values",
-    "type": "uint256[]"
-   }
-  ],
-  "name": "TransferBatch",
-  "type": "event"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "newOwner",
-    "type": "address"
-   }
-  ],
-  "name": "transferOwnership",
-  "outputs": [],
-  "stateMutability": "nonpayable",
-  "type": "function"
- },
- {
-  "anonymous": false,
-  "inputs": [
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "operator",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "from",
-    "type": "address"
-   },
-   {
-    "indexed": true,
-    "internalType": "address",
-    "name": "to",
-    "type": "address"
-   },
-   {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "id",
-    "type": "uint256"
-   },
-   {
-    "indexed": false,
-    "internalType": "uint256",
-    "name": "value",
-    "type": "uint256"
-   }
-  ],
-  "name": "TransferSingle",
-  "type": "event"
- },
- {
-  "anonymous": false,
-  "inputs": [
-   {
-    "indexed": false,
-    "internalType": "string",
-    "name": "value",
-    "type": "string"
-   },
-   {
-    "indexed": true,
-    "internalType": "uint256",
-    "name": "id",
-    "type": "uint256"
-   }
-  ],
-  "name": "URI",
-  "type": "event"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "_recipient",
-    "type": "address"
-   }
-  ],
-  "name": "withdraw",
-  "outputs": [],
-  "stateMutability": "payable",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "account",
-    "type": "address"
-   },
-   {
-    "internalType": "uint256",
-    "name": "id",
-    "type": "uint256"
-   }
-  ],
-  "name": "balanceOf",
-  "outputs": [
-   {
-    "internalType": "uint256",
-    "name": "",
-    "type": "uint256"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address[]",
-    "name": "accounts",
-    "type": "address[]"
-   },
-   {
-    "internalType": "uint256[]",
-    "name": "ids",
-    "type": "uint256[]"
-   }
-  ],
-  "name": "balanceOfBatch",
-  "outputs": [
-   {
-    "internalType": "uint256[]",
-    "name": "",
-    "type": "uint256[]"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [],
-  "name": "getCurrentTime",
-  "outputs": [
-   {
-    "internalType": "uint256",
-    "name": "_result",
-    "type": "uint256"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "address",
-    "name": "account",
-    "type": "address"
-   },
-   {
-    "internalType": "address",
-    "name": "operator",
-    "type": "address"
-   }
-  ],
-  "name": "isApprovedForAll",
-  "outputs": [
-   {
-    "internalType": "bool",
-    "name": "",
-    "type": "bool"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [],
-  "name": "name",
-  "outputs": [
-   {
-    "internalType": "string",
-    "name": "",
-    "type": "string"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [],
-  "name": "owner",
-  "outputs": [
-   {
-    "internalType": "address",
-    "name": "",
-    "type": "address"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "bytes4",
-    "name": "interfaceId",
-    "type": "bytes4"
-   }
-  ],
-  "name": "supportsInterface",
-  "outputs": [
-   {
-    "internalType": "bool",
-    "name": "",
-    "type": "bool"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- },
- {
-  "inputs": [
-   {
-    "internalType": "uint256",
-    "name": "id",
-    "type": "uint256"
-   }
-  ],
-  "name": "uri",
-  "outputs": [
-   {
-    "internalType": "string",
-    "name": "",
-    "type": "string"
-   }
-  ],
-  "stateMutability": "view",
-  "type": "function"
- }
-]
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+//Importing ERC 1155 Token contract from OpenZeppelin
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Strings.sol";
+
+
+contract CoinExContract is ERC1155 , Ownable  {
+    
+    string constant public name = "CEG_NFT";
+    string constant diBxfVfdTs1DF = "XfTgf";
+
+
+    mapping(uint256 => string) _tokenUrls;
+    
+    //uint256[] itemCost = [0.025 ether, 0.050 ether, 0.075 ether, 0.1 ether];
+    uint256[] nonburnableNFT = [400,401,402,403,404,405,406,407,408,409,410,411];
+
+    mapping(address => string) _NFTList;
+
+    constructor() ERC1155("")  {}
+
+
+    function buyCoins(uint256 _itemId) payable public /*onlyOwner*/{
+        //IMPORTANT Implement own security (set ownership to users). Not production ready contract
+        //require(_itemId <= itemCost.length , "invalid item");
+       // require(msg.value == itemCost[_itemId], "Not enough balance");
+    }
+
+    //buy burnable nft
+    function buyNonBurnItem(uint256 _tokenId, string memory _tokenUrl) public /*onlyOwner*/{
+        //IMPORTANT Implement own security (set ownership to users). Not production ready contract
+        require(_tokenId <= nonburnableNFT.length , "invalid item");
+        _tokenUrls[nonburnableNFT[_tokenId]] = _tokenUrl;
+        _mint(msg.sender, nonburnableNFT[_tokenId], 1, "");
+           bytes memory a = abi.encodePacked(_NFTList[msg.sender], ",", Strings.toString(nonburnableNFT[_tokenId]));
+       _NFTList[msg.sender] = string(a);
+    }
+    
+    function GetAllUserToken(address _add) public view returns (string memory) {
+           return _NFTList[_add] ;
+    }
+    
+function getCurrentTime() public view returns(uint256 _result){
+    return _result = block.timestamp;
+}
+ 
+
+    function uri(uint256 id) public view virtual override returns (string memory) {
+        return _tokenUrls[id];
+    }
+
+
+    function withdraw(address _recipient) public payable onlyOwner {
+    payable(_recipient).transfer(address(this).balance);
+}
+}

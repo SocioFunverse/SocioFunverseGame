@@ -14,7 +14,7 @@ Socio Funverse is metaverse game where players can chill with each other, talk, 
 
 ## Technologies
 - Unity game engine for game development and firebase to save userdata
-- [CoinEx Testnet for DeFi, Token ERC-20 and NFT-1155](https://github.com)
+- [CoinEx Testnet for DeFi, Token ERC-20 and NFT-1155](https://github.com/SocioFunverse/SocioFunverseGame/blob/main/CoinEx.md)
 - Remix IDE used to create smart contract for ERC-1155 NFT, ERC-20 game token and in-app purchase for coins
 
 

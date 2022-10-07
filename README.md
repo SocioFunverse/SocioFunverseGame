@@ -32,4 +32,10 @@ CoinEx - Testnet : https://testnet.coinex.net/address/0xca39deE8Bc83d428aA8C87a2
 ![Socio Funverse Game](/Images/.jpg)
 
 ### NFT-1155 as game item and can be used in fun world
-![Socio Funverse Game](/Images/.jpg)
+![Socio Funverse Game](/Images/)
+
+
+![Socio Funverse Game](/Images/CoinEx1.jpg)
+![Socio Funverse Game](/Images/CoinEx2.jpg)
+
+

@@ -31,13 +31,13 @@ CoinEx - Testnet : https://testnet.coinex.net/address/0xca39deE8Bc83d428aA8C87a2
 ![Socio Funverse Game](/Images/SocioFunVerse7.jpg)
 
 ### DeFi - In game purchase with CoinEx 
-![Socio Funverse Game](/Images/SocioFunVerse14.jpg)
+![Socio Funverse Game](/Images/SocioFunVerse4.jpg)
 
 ### DeFi - Game Token ERC-20
-![Socio Funverse Game](/Images/SocioFunVerse12.jpg)
+![Socio Funverse Game](/Images/SocioFunVerse2.jpg)
 
 ### NFT-1155 as game item and can be used in fun world
-![Socio Funverse Game](/Images/SocioFunVerse13.jpg)
+![Socio Funverse Game](/Images/SocioFunVerse3.jpg)
 
 ### CoinEx Smart Contracts Interactions
 ![Socio Funverse Game](/Images/CoinEx1.jpg)

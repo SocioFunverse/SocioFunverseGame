@@ -1,7 +1,7 @@
 # Socio Funverse- CoinEx Hack
 Socio Funverse is metaverse game where players can chill with each other, talk, play missions and earn game tokens and NFT
 
-## [Click here to play](https://www.thundergamestudio.com/evmoshack/)
+## [Click here to play](https://bafybeihk6n4yqbr2nlnes6nalv4g63jmczn6dzo2vabrrbg2zmlpibw7ay.ipfs.gateway.valist.io/)
 
 ## Features
 - Daily game reward as ERC-20 token
